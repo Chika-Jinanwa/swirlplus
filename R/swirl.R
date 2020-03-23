@@ -297,7 +297,7 @@ resume.default <- function(e, ...){
   # If the user wants to skip the current question, do the bookkeeping.
   if(uses_func("skip")(e$expr)[[1]]){
     # this disables skip
-    swirl_out(s()%N%"Skipping is disabled please complete all questions to get credit for this module.",
+    swirl_out(s()%N%"Skipping is disabled. Please complete all questions to get the generated code for this lesson.",
               skip_after=TRUE)
     # Make sure playing flag is off since user skipped
     e$playing <- FALSE
